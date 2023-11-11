@@ -52,7 +52,9 @@ export const Todos = () => {
               </div>
             ))}
           </div>
-          <div className="items__count">Total {items.length} item(s)</div>
+          <div className="items__count">
+            <div>Total {items.length} items</div>
+          </div>
           <div className="items__buttons">
             <button className="button" onClick={onAction("share")}>
               <img src="/img/iconShare.svg" />
